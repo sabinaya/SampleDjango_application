@@ -1,2 +1,3 @@
 # SampleDjango_application
-Calculator which performs basin Arithmetic Operations
+Sample Application to get the hang of Django
+Calculator which performs basic Arithmetic Operations.
