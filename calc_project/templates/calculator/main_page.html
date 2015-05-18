@@ -1,20 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Online calculator!</h1> 
+    <p>A page for simple arithmetic operations</p>
+    <a href="/calculator/machine/" class="btn btn-info btn-lg">Calculator</a>
+  </div>
+</div>
 
-{% load static %}
+<div class="container">
+  	<p>This website provides a calculator for simple arithmetic operator ....</p>
+  	<p>Click on the calculator button above to use the calculator</p>
+</div>
 
-<html>
-
-    <head>
-        <title>Calculator</title>
-        <!-- <link rel="stylesheet" href="{% static "css/base.css" %}" />
-        <script src="{% static "js/jquery.js" %}"></script> -->
-    </head>
-
-    <body>
-        <h1>Welcome to the website! </h1>
-        <br/>
-        <img src="{% static "images/calc_Img.jpg" %}" alt="Picture of calculator" />
-        <button id="machine">Calculator</button>
-    </body>
-
+</body>
 </html>
