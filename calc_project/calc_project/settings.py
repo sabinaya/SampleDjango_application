@@ -24,6 +24,12 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
+
+STATIC_URL = '/static/'
+
 ALLOWED_HOSTS = []
 
 
@@ -48,6 +54,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+TEMPLATE_DIRS = (TEMPLATE_PATH,)
+
+STATICFILES_DIRS = (
+    STATIC_PATH,
+    )
 
 ROOT_URLCONF = 'calc_project.urls'
 
