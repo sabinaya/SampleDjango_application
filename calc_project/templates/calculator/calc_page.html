@@ -7,77 +7,33 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-	$(document).ready(function() {
-	    $("#1").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("2").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("3").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("4").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("5").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("6").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("7").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("8").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	    $("9").click(function () {
-	    	$("#focusedInput").text("1");
-	    });
-	});
-</script>
-
 </head>
-<body>
-<div class="container">
-  <div class="jumbotron">
-    <h1>The calculator is ready</h1> 
-  </div>
-</div>
+	<body>
+		<h1 style ="color:blue">Welcome</h1>
+		<form  method="POST" action=".">{% csrf_token %}
+			<input type="text" name="valueof" value="{{ b }}{{ a }}"/>
+			<p><input type="submit" name="1" value="1">
+			<input type="submit" name="2" value="2">
+			<input type="submit" name="3" value="3" /></p>
+			<p>
+			<input type="submit" name="4" value="4">
+			<input type="submit" name="5" value="5">
+			<input type="submit" name="6" value="6" />
+			</p>
+			<p>
+			<input type="submit" name="7" value="7">
+			<input type="submit" name="8" value="8">
+			<input type="submit" name="9" value="9" />
+			</p>
+			<p><input type="submit" name="0" value="0" />
+			<input type="submit" name="+" value="+" />
+			<input type="submit" name="*" value="*" />
+			</p>
+			<input type="submit" name="-" value="-" />
+			<input type="submit" name="/" value="/" />
+			<input type="submit" name="=" value="=" />
+			<input type="submit" name="clear" value="AC" />
 
-<div class="container">
-	<form class="form-horizontal" role="form">
-	    <div class="form-group">
-	      <div class="col-sm-3">
-	        <input class="form-control" id="focusedInput" type="text" value="0"readonly>
-	      </div>
-	    </div>
-	    <div class="form-group">
-	    	<div class="col-sm-3">
-	    	    <div class="col-sm-3" id="1"><input type="submit" class="btn btn-info" value="1"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="2" id="2"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="3" name="3"></div>
-	      	</div>
-	    </div>
-	    <div class="form-group">
-	    	<div class="col-sm-3">
-	    	    <div class="col-sm-3"><input type="submit" class="btn btn-info" value="4" name="4"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="5" name="5"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="6" name="6"></div>
-	      	</div>
-	    </div>
-	    <div class="form-group">
-	    	<div class="col-sm-3">
-	    	    <div class="col-sm-3"><input type="submit" class="btn btn-info" value="7" name="7"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="8" name="8"></div>
-	        	<div class="col-sm-3"><input type="submit" class="btn btn-info" value="9" name="9"></div>
-	      	</div>
-	    </div>
-	</form>
-</div>
-
-</body>
+		</form>
+	</body>
 </html>
